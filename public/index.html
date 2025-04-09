@@ -1,0 +1,14 @@
+<!-- Adicionar na seção head -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=SEU_ID_DO_GA"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Configurar consentimento padrão como negado
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied'
+  });
+
+  gtag('config', 'SEU_ID_DO_GA');
+</script> 
