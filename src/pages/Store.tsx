@@ -231,9 +231,7 @@ const Store = () => {
                 <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
                 <p className="text-sm text-gray-600 mb-4">{product.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-blue-600">
-                    €{product.price}
-                  </span>
+                  <span className="text-2xl font-bold text-blue-600">{product.price}</span>
                   <button 
                     onClick={() => handleProductSelect(product.id)}
                     className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${

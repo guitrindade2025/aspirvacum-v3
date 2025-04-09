@@ -92,19 +92,25 @@ const Manutencao = () => {
                 <li>✓ Desconto em peças</li>
                 <li>✓ Prioridade no atendimento</li>
                 <li>✓ Relatórios técnicos</li>
+                <li>✓ Garantia estendida</li>
+                <li>✓ Suporte telefónico</li>
+                <li>✓ Assistência de emergência</li>
+                <li>✓ Limpeza de filtros gratuita</li>
               </ul>
             </div>
           </div>
           <div>
             <img 
-              src="/images/manutencao.jpg" 
+              src="/maintenance.jpg" 
               alt="Manutenção"
-              className="rounded-lg shadow-lg mb-6"
+              className="rounded-lg shadow-lg mb-6 w-full max-w-lg mx-auto"
             />
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4 text-blue-600">Agende uma Manutenção</h3>
               <p className="mb-4">Entre em contato conosco para agendar uma visita técnica ou tirar dúvidas sobre nossos serviços de manutenção.</p>
-              <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+              <button 
+                className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
+                onClick={() => window.location.href = '/contactos'}>
                 Solicitar Orçamento
               </button>
             </div>

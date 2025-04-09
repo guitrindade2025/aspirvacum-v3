@@ -158,7 +158,10 @@ const SistemasIndustriais = () => {
               <p className="mb-6">
                 Os nossos especialistas estão disponíveis para avaliar as suas necessidades e desenvolver uma solução personalizada para a sua indústria.
               </p>
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button 
+                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                onClick={() => window.location.href = '/contactos'}
+              >
                 Contacte-nos
               </button>
             </div>

@@ -49,7 +49,7 @@ function App() {
                 {/* Public routes */}
                 <Route path="/" element={<HomePage />} />
                 <Route path="/a-empresa" element={<AboutUs />} />
-                <Route path="/produtos-aspirvaccum" element={<Products />} />
+                <Route path="/produtos-aspirvacum" element={<Products />} />
                 <Route path="/contactos" element={<Contactos />} />
                 <Route path="/assistencia-tecnica-de-aspiracao-central" element={<TechnicalSupport />} />
                 <Route path="/aspiracao-central" element={<MoreInfo />} />

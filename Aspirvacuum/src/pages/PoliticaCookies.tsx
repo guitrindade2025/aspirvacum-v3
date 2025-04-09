@@ -109,8 +109,8 @@ const PoliticaCookies = () => {
             <h2 className="text-2xl font-semibold mb-4">Contacte-nos</h2>
             <p>
               Se tiver alguma dúvida sobre nossa Política de Cookies, por favor contacte-nos através do email: 
-              <a href="mailto:info@aspirvacuum.pt" className="text-blue-600 hover:underline ml-1">info@aspirvacuum.pt</a>
-              <p className="text-gray-600">info@aspirvacuum.pt</p>
+              <a href="mailto:info@aspirvacum.pt" className="text-blue-600 hover:underline ml-1">info@aspirvacum.pt</a>
+              <p className="text-gray-600">info@aspirvacum.pt</p>
             </p>
           </section>
 

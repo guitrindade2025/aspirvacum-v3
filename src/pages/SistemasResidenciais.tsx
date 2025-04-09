@@ -153,7 +153,10 @@ const SistemasResidenciais = () => {
               <p className="mb-6">
                 Os nossos especialistas estão disponíveis para avaliar as suas necessidades e apresentar a melhor solução para a sua casa.
               </p>
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button 
+                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                onClick={() => window.location.href = '/contactos'}
+              >
                 Contacte-nos
               </button>
             </div>
@@ -251,23 +254,6 @@ const SistemasResidenciais = () => {
             <li>Substituição de placas eletrônicas</li>
           </ul>
           <p className="text-gray-600 mt-4">Todos os materiais aplicados são originais e possuem garantia do fabricante.</p>
-        </div>
-
-        {/* Diagrama de Instalação */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Como Funciona</h2>
-          <div className="relative">
-            <img
-              src="/FOTOS/diagrama-instalacao.png"
-              alt="Diagrama de Instalação"
-              className="w-full rounded-lg shadow-lg"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
-            <div className="absolute bottom-4 left-4 text-white">
-              <h3 className="text-xl font-bold mb-2">Sistema Completo</h3>
-              <p>Instalação profissional e discreta em toda a casa</p>
-            </div>
-          </div>
         </div>
       </div>
     </motion.div>

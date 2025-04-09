@@ -22,7 +22,7 @@ const AuthContext = createContext<AuthContextType>({
 
 // Default admin user (in a real app, this would be in a database)
 const DEFAULT_ADMIN = {
-  email: 'admin@aspirvaccum.com',
+  email: 'admin@aspirvacum.com',
   password: 'admin123',
   name: 'Admin User'
 }

@@ -27,7 +27,7 @@ const Footer = () => {
             <h6 className="text-lg font-bold mb-4">Contacte-nos</h6>
             <p className="text-gray-400">Telefone: <a href="tel:+351917601184" className="hover:text-white">+351 917 601 184</a></p>
             <p className="text-gray-400">Email: <a href="mailto:geral@aspirvacum.pt" className="hover:text-white">geral@aspirvacum.pt</a></p>
-            <p className="text-gray-400">Visite-nos: <a href="http://www.aspirvacuum.pt" target="_blank" rel="noopener noreferrer" className="hover:text-white">aspirvacuum.pt</a></p>
+            <p className="text-gray-400">Visite-nos: <a href="http://www.aspirvacum.pt" target="_blank" rel="noopener noreferrer" className="hover:text-white">aspirvacum.pt</a></p>
           </div>
         </div>
 

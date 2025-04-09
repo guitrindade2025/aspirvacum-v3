@@ -35,7 +35,7 @@ const Contactos = () => {
                 <FaEnvelope className="text-blue-600 w-6 h-6 mr-3" />
                 <h3 className="text-xl font-semibold">Email</h3>
               </div>
-              <p className="text-gray-600">info@aspirvacuum.pt</p>
+              <p className="text-gray-600">info@aspirvacum.pt</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
