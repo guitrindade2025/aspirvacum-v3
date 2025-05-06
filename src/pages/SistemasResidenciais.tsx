@@ -82,23 +82,23 @@ const SistemasResidenciais = () => {
             <h2 className="text-3xl font-bold mb-6">Ideal para</h2>
             <ul className="space-y-4 text-lg">
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Moradias unifamiliares</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Apartamentos</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Condomínios residenciais</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Casas de férias</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Residências de luxo</span>
               </li>
             </ul>
@@ -106,19 +106,19 @@ const SistemasResidenciais = () => {
             <h2 className="text-3xl font-bold mt-12 mb-6">Vantagens</h2>
             <ul className="space-y-4 text-lg">
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Maior poder de sucção que aspiradores convencionais</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Sistema silencioso - motor instalado em área técnica</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Ar mais limpo - expelido para o exterior</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-aspirvacum-teal mr-2">•</span>
                 <span>Valorização do imóvel</span>
               </li>
             </ul>
@@ -130,31 +130,31 @@ const SistemasResidenciais = () => {
             <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-aspirvacum-teal mr-2">✓</span>
                   <span>Instalação discreta e integrada</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-aspirvacum-teal mr-2">✓</span>
                   <span>Tomadas estrategicamente posicionadas</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-aspirvacum-teal mr-2">✓</span>
                   <span>Manutenção simples e prática</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
+                  <span className="text-aspirvacum-teal mr-2">✓</span>
                   <span>Sistema de filtragem avançado</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-blue-600 text-white rounded-lg p-8">
+            <div className="bg-aspirvacum-teal text-white rounded-lg p-8">
               <h3 className="text-2xl font-bold mb-4">Solicite um orçamento</h3>
               <p className="mb-6">
                 Os nossos especialistas estão disponíveis para avaliar as suas necessidades e apresentar a melhor solução para a sua casa.
               </p>
               <button 
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="bg-white text-aspirvacum-teal px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                 onClick={() => window.location.href = '/contactos'}
               >
                 Contacte-nos
@@ -168,29 +168,29 @@ const SistemasResidenciais = () => {
           <h2 className="text-3xl font-bold mb-8 text-center">Ambientes</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
-                <FaBed className="text-blue-600 w-8 h-8" />
+              <div className="bg-aspirvacum-blue/10 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
+                <FaBed className="text-aspirvacum-teal w-8 h-8" />
               </div>
               <h3 className="font-semibold">Quartos</h3>
               <p className="text-sm text-gray-600">Limpeza silenciosa</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
-                <FaCouch className="text-blue-600 w-8 h-8" />
+              <div className="bg-aspirvacum-blue/10 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
+                <FaCouch className="text-aspirvacum-teal w-8 h-8" />
               </div>
               <h3 className="font-semibold">Sala</h3>
               <p className="text-sm text-gray-600">Maior conforto</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
-                <FaUtensils className="text-blue-600 w-8 h-8" />
+              <div className="bg-aspirvacum-blue/10 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
+                <FaUtensils className="text-aspirvacum-teal w-8 h-8" />
               </div>
               <h3 className="font-semibold">Cozinha</h3>
               <p className="text-sm text-gray-600">Praticidade diária</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
-                <FaCar className="text-blue-600 w-8 h-8" />
+              <div className="bg-aspirvacum-blue/10 rounded-full p-6 mx-auto w-20 h-20 flex items-center justify-center mb-4">
+                <FaCar className="text-aspirvacum-teal w-8 h-8" />
               </div>
               <h3 className="font-semibold">Garagem</h3>
               <p className="text-sm text-gray-600">Limpeza profunda</p>
@@ -201,7 +201,7 @@ const SistemasResidenciais = () => {
         {/* Calculadora de Pontos */}
         <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
           <div className="flex items-center mb-6">
-            <FaCalculator className="text-blue-600 w-8 h-8 mr-4" />
+            <FaCalculator className="text-aspirvacum-teal w-8 h-8 mr-4" />
             <h2 className="text-2xl font-bold">Calculadora de Pontos de Aspiração</h2>
           </div>
           
@@ -215,7 +215,7 @@ const SistemasResidenciais = () => {
                 min="1"
                 value={numQuartos}
                 onChange={(e) => setNumQuartos(parseInt(e.target.value))}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-aspirvacum-teal focus:border-aspirvacum-teal"
               />
             </div>
             <div>
@@ -228,15 +228,15 @@ const SistemasResidenciais = () => {
                 step="10"
                 value={area}
                 onChange={(e) => setArea(parseInt(e.target.value))}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-aspirvacum-teal focus:border-aspirvacum-teal"
               />
             </div>
           </div>
 
-          <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+          <div className="mt-6 p-4 bg-aspirvacum-blue/10 rounded-lg">
             <p className="text-lg">
               Pontos de aspiração recomendados:{" "}
-              <span className="font-bold text-blue-600">
+              <span className="font-bold text-aspirvacum-teal">
                 {calcularPontosAspiracao(numQuartos, area)}
               </span>
             </p>

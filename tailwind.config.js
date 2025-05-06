@@ -14,7 +14,8 @@ module.exports = {
         'aspirvacum-dark': '#333331',
         'aspirvacum-light': '#fafafa',
         'aspirvacum-gray': '#96999b',
-        'aspirvacum-blue': '#007BFF',
+        'aspirvacum-blue': '#40c6ea',
+        'aspirvacum-teal': '#0f5f7e',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

@@ -38,14 +38,14 @@ const AboutUs = () => {
       className="min-h-screen"
     >
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-blue-600 text-white">
+      <div className="relative overflow-hidden bg-gradient-to-r from-aspirvacum-teal to-aspirvacum-blue text-white">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
             alt="Interior Moderno com Sistema de Aspiração" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-blue-600/75"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-aspirvacum-teal/75 to-aspirvacum-blue/75"></div>
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20"></div>
         <div className="max-w-7xl mx-auto px-4 py-24 relative z-10">
@@ -81,7 +81,7 @@ const AboutUs = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300"
             >
-              <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+              <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-aspirvacum-teal mb-4">
                 {item.icon}
               </div>
               <h3 className="text-3xl font-bold mb-2">{item.number}</h3>
@@ -118,7 +118,7 @@ const AboutUs = () => {
                 "Garantia alargada"
               ].map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-aspirvacum-teal rounded-full"></div>
                   <span className="text-gray-700">{item}</span>
                 </div>
               ))}
@@ -149,12 +149,12 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">O que nos define</h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+            <div className="w-24 h-1 bg-aspirvacum-teal mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <svg className="h-12 w-12 text-aspirvacum-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-12 w-12 text-aspirvacum-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
@@ -164,7 +164,7 @@ const AboutUs = () => {
 
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <svg className="h-12 w-12 text-aspirvacum-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-12 w-12 text-aspirvacum-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
@@ -175,7 +175,7 @@ const AboutUs = () => {
 
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <svg className="h-12 w-12 text-aspirvacum-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-12 w-12 text-aspirvacum-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>

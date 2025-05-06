@@ -79,7 +79,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const logoImage = document.querySelector('img[src="/logo.jpg"]') as HTMLImageElement | null;
+    const logoImage = document.querySelector('img[src="/Logo AspirVacum.jpg"]') as HTMLImageElement | null;
     if (logoImage) {
       const handleImageLoad = () => {
         setMobileMenuOpen(false);
@@ -138,7 +138,7 @@ const Header = () => {
         left: 0;
         width: 0;
         height: 2px;
-        background-color: #2563eb;
+        background-color: #0f5f7e;
         transition: width 200ms ease-in-out;
       }
       .nav-link:hover::after {
@@ -152,110 +152,117 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-white shadow-sm relative z-40">
+    <header className="bg-white shadow-sm relative z-40 py-0">
       <nav className="max-w-screen-xl mx-auto px-4" aria-label="Top">
-        <div className="flex h-16 items-center">
+        <div className="flex items-center justify-between">
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img className="h-16 w-auto" src="/logo.jpg" alt="Aspirvacum" />
+              <img
+                className="h-24 md:h-32 w-auto object-contain"
+                src="/Logo AspirVacum.jpg"
+                alt="Aspirvacum"
+                style={{ marginTop: '4px', marginBottom: '4px' }}
+              />
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center space-x-1 ml-[450px]">
-            {navigation.main.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="nav-link text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200"
-              >
-                {item.name}
-              </Link>
-            ))}
-
-            {/* Aspiração Central Dropdown */}
-            <div
-              ref={(el) => (submenuRefs.current['aspiracao'] = el)}
-              className="relative submenu-container"
-              onMouseEnter={() => !isTouchDevice && handleSubmenuEnter('aspiracao')}
-              onMouseLeave={() => handleSubmenuLeave('aspiracao')}
-              onClick={() => handleSubmenuClick('aspiracao')}
-            >
-              <button
-                className="nav-link flex items-center text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                aria-expanded={activeSubmenu === 'aspiracao'}
-              >
-                Aspiração Central
-                <svg
-                  className={`ml-1 h-4 w-4 transform transition-transform duration-200 ${
-                    activeSubmenu === 'aspiracao' ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+          {/* Desktop Navigation - Centralizado verticalmente */}
+          <div className="hidden md:flex md:items-center md:justify-center flex-1">
+            <div className="flex space-x-6 items-center">
+              {navigation.main.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="nav-link text-base font-medium text-gray-700 hover:text-aspirvacum-teal transition-colors duration-200"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
+                  {item.name}
+                </Link>
+              ))}
 
+              {/* Aspiração Central Dropdown */}
               <div
-                className={`submenu-transition submenu-content ${
-                  activeSubmenu === 'aspiracao' ? 'open' : ''
-                }`}
+                ref={(el) => (submenuRefs.current['aspiracao'] = el)}
+                className="relative submenu-container"
+                onMouseEnter={() => !isTouchDevice && handleSubmenuEnter('aspiracao')}
+                onMouseLeave={() => handleSubmenuLeave('aspiracao')}
+                onClick={() => handleSubmenuClick('aspiracao')}
               >
-                {navigation.aspiracao.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200"
-                    onClick={() => setActiveSubmenu(null)}
+                <button
+                  className="nav-link flex items-center text-base font-medium text-gray-700 hover:text-aspirvacum-teal transition-colors duration-200"
+                  aria-expanded={activeSubmenu === 'aspiracao'}
+                >
+                  Aspiração Central
+                  <svg
+                    className={`ml-1 h-4 w-4 transform transition-transform duration-200 ${
+                      activeSubmenu === 'aspiracao' ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    {item.name}
-                  </Link>
-                ))}
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <div
+                  className={`submenu-transition submenu-content ${
+                    activeSubmenu === 'aspiracao' ? 'open' : ''
+                  }`}
+                >
+                  {navigation.aspiracao.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-aspirvacum-teal transition-colors duration-200"
+                      onClick={() => setActiveSubmenu(null)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* Loja Dropdown */}
-            <div
-              ref={(el) => (submenuRefs.current['loja'] = el)}
-              className="relative submenu-container"
-              onMouseEnter={() => !isTouchDevice && handleSubmenuEnter('loja')}
-              onMouseLeave={() => handleSubmenuLeave('loja')}
-              onClick={() => handleSubmenuClick('loja')}
-            >
-              <button
-                className="nav-link flex items-center text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                aria-expanded={activeSubmenu === 'loja'}
-              >
-                Loja
-                <svg
-                  className={`ml-1 h-4 w-4 transform transition-transform duration-200 ${
-                    activeSubmenu === 'loja' ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
+              {/* Loja Dropdown */}
               <div
-                className={`submenu-transition submenu-content ${
-                  activeSubmenu === 'loja' ? 'open' : ''
-                }`}
+                ref={(el) => (submenuRefs.current['loja'] = el)}
+                className="relative submenu-container"
+                onMouseEnter={() => !isTouchDevice && handleSubmenuEnter('loja')}
+                onMouseLeave={() => handleSubmenuLeave('loja')}
+                onClick={() => handleSubmenuClick('loja')}
               >
-                {navigation.loja.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200"
-                    onClick={() => setActiveSubmenu(null)}
+                <button
+                  className="nav-link flex items-center text-base font-medium text-gray-700 hover:text-aspirvacum-teal transition-colors duration-200"
+                  aria-expanded={activeSubmenu === 'loja'}
+                >
+                  Loja
+                  <svg
+                    className={`ml-1 h-4 w-4 transform transition-transform duration-200 ${
+                      activeSubmenu === 'loja' ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    {item.name}
-                  </Link>
-                ))}
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <div
+                  className={`submenu-transition submenu-content ${
+                    activeSubmenu === 'loja' ? 'open' : ''
+                  }`}
+                >
+                  {navigation.loja.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-aspirvacum-teal transition-colors duration-200"
+                      onClick={() => setActiveSubmenu(null)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -264,7 +271,7 @@ const Header = () => {
           <div className="flex md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-[#0f5f7e]"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-expanded="false"
             >
@@ -287,7 +294,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-[#0f5f7e]"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
@@ -297,7 +304,7 @@ const Header = () => {
             {/* Mobile Aspiração Central Submenu */}
             <div className="space-y-1">
               <button
-                className="flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                className="flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-[#0f5f7e]"
                 onClick={() => setActiveSubmenu(activeSubmenu === 'aspiracao' ? null : 'aspiracao')}
               >
                 Aspiração Central
@@ -323,7 +330,7 @@ const Header = () => {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-blue-600"
+                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-[#0f5f7e]"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
@@ -336,7 +343,7 @@ const Header = () => {
             {/* Mobile Loja Submenu */}
             <div className="space-y-1">
               <button
-                className="flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                className="flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-[#0f5f7e]"
                 onClick={() => setActiveSubmenu(activeSubmenu === 'loja' ? null : 'loja')}
               >
                 Loja
@@ -362,7 +369,7 @@ const Header = () => {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-blue-600"
+                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-[#0f5f7e]"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
